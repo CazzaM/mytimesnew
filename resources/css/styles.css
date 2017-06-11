@@ -100,7 +100,7 @@
 .large {
   /* margin: 0;*/
   /* Create the width of the flex container*/
-  width: 630px;
+  min-width: 630px;
   /* Create temporary borders to make life easier*/
   border: 1px solid purple;
 }
@@ -108,7 +108,7 @@
 .medium {
   /* margin: 0;*/
   /* Create the width of the flex container*/
-  width: 300px;
+  min-width: 300px;
   /* Create temporary borders to make life easier*/
   border: 1px solid brown;
 
@@ -117,7 +117,7 @@
 .small {
   /* margin: 0;*/
   /* Create the width of the flex container*/
-  width: 240px;
+  min-width: 240px;
   /* Create temporary borders to make life easier*/
   border: 1px solid pink;
 }
