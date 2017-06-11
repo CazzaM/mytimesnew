@@ -120,11 +120,12 @@
 }
 
 .column p{
-  margin: 0 auto;
+  margin: auto;
   border: 1px solid blue;
 }
 
 .column h2{
+  margin: auto;
   border: 1px solid orange;
 }
 
