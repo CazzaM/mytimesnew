@@ -1,0 +1,131 @@
+/* Change the default margins for the webpage */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin: 0 auto;
+}
+
+/* This is the Header section */
+.header {
+  margin: 0;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+/* Creates a flex container */
+  display: flex;
+/* This puts space between the (logo and tagline) which is one flex container and the list items on the right which is another flex container
+  justify-content: space-between; */
+  /* Creates a margin on top of the header */
+  margin-top: 10px;
+  padding-bottom: 10px;
+  /* Creates a border below the header */
+  border-bottom: 1px solid black;
+
+}
+
+.header img{
+/* This creates a 15px gap between the logo and the tagline */
+  padding-right: 15px;
+}
+
+.header li{
+/* This removes the bullet point from the list items */
+  list-style: none;
+/* This puts each list item next to each other on the same line (makes the span an inline block)*/
+  display : inline-flex;
+/* This creates an underline under each list item because these are not hrefs, they are spans */
+  text-decoration: underline;
+/* This creates a 15px gap between each list item */
+  padding-right: 15px;
+
+}
+
+.headingleft {
+  margin: 0;
+/* This puts the tagline next to the logo (makes the paragraph an inline block) */
+  display:inline-flex;
+/* This leaves a 30px gap before the logo*/
+  padding-left: 30px;
+/* These two lines centres the tagline so that it appears in the middle of the logo */
+  justify-content: flex-start;
+  align-items: center;
+/* Create temporary borders to make life easier*/
+  border: 1px solid black;
+  margin-right: 10px;
+  min-width: 80%;
+}
+
+.logo p{
+/* This makes the tagline the same colour as the logo's "my" portion */
+  color: MediumAquamarine;
+}
+
+.headingright {
+  margin: 0;
+/* These two lines centres the list items with the tagline (in the middle)*/
+  display:inline-flex;
+  align-items: center;
+/* This leaves a 30px gap after the list items */
+  padding-right: 30px;
+  min-width: 200px;
+}
+
+.spacer{
+  padding-top: 50px;
+  max-width: 95%;
+  margin: auto;
+}
+
+.main{
+  margin: auto;
+  border: 1px solid MediumAquamarine;
+  display: flex;
+  justify-content:space-around;
+}
+
+.column {
+  display:inline-flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* Create temporary borders to make life easier*/
+  border: 1px solid yellow;
+  margin: 3px 5px 0px 5px;
+  padding-top: 20px;
+}
+
+.large {
+  /* Create the width of the flex container*/
+  width: 630px;
+  /* Create temporary borders to make life easier*/
+  border: 1px solid purple;
+}
+
+.medium {
+  /* Create the width of the flex container*/
+  width: 300px;
+  /* Create temporary borders to make life easier*/
+  border: 1px solid brown;
+
+}
+
+.small {
+  /* Create the width of the flex container*/
+  width: 240px;
+  /* Create temporary borders to make life easier*/
+  border: 1px solid pink;
+}
+
+.column p{
+  border: 1px solid blue;
+}
+
+.column h2{
+  border: 1px solid orange;
+}
+
+.column img{
+  border: 1px solid red;
+}
