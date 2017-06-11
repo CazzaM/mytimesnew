@@ -98,6 +98,7 @@
 }
 
 .large {
+  margin: 0;
   /* Create the width of the flex container*/
   width: 630px;
   /* Create temporary borders to make life easier*/
@@ -105,6 +106,7 @@
 }
 
 .medium {
+  margin: 0;
   /* Create the width of the flex container*/
   width: 300px;
   /* Create temporary borders to make life easier*/
@@ -113,6 +115,7 @@
 }
 
 .small {
+  margin: 0;  
   /* Create the width of the flex container*/
   width: 240px;
   /* Create temporary borders to make life easier*/
