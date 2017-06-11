@@ -98,26 +98,26 @@
 }
 
 .large {
-  /* margin: 0;*/
+  margin: 0 auto;
   /* Create the width of the flex container*/
-  min-width: 630px;
+  width: 630px;
   /* Create temporary borders to make life easier*/
   border: 1px solid purple;
 }
 
 .medium {
-  /* margin: 0;*/
+  margin: 0 auto;
   /* Create the width of the flex container*/
-  min-width: 300px;
+  width: 300px;
   /* Create temporary borders to make life easier*/
   border: 1px solid brown;
 
 }
 
 .small {
-  /* margin: 0;*/
+  margin: 0 auto;
   /* Create the width of the flex container*/
-  min-width: 240px;
+  width: 240px;
   /* Create temporary borders to make life easier*/
   border: 1px solid pink;
 }
