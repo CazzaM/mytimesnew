@@ -84,7 +84,7 @@
   margin: auto;
   border: 1px solid MediumAquamarine;
   display: flex;
-  justify-content:center;
+  justify-content:space-between;
 }
 
 .column {
