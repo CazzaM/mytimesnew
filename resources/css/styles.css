@@ -37,7 +37,7 @@
 /* This creates an underline under each list item because these are not hrefs, they are spans */
   text-decoration: underline;
   /* This creates a 15px gap between each list item */
-    padding-right: 15px;
+  padding-right: 15px;
 }
 
 .headingleft {
@@ -48,8 +48,6 @@
 /* These two lines centres the tagline so that it appears in the middle of the logo */
   justify-content: flex-start;
   align-items: center;
-/* Create temporary borders to make life easier */
-  border: 1px solid black;
 /* This creates a space between the border and the first list item */
   margin-right: 10px;
 /* This is done to set a specific width for the logo and tagline so that the menu items can appear at a specific place */
@@ -70,10 +68,9 @@
 }
 
 .spacer{
-/* Create temporary borders to make life easier */
-  border: 1px solid black;
-/* This stops the column widths from changing when the browser shrinks */
-  position: absolute;
+/* This stops the column widths from changing when the browser shrinks
+  position: absolute;*/
+  z-index: 5;
 /* This creates a margin to the left of the first column */
   margin-left: 20px;
 }
@@ -94,8 +91,6 @@
 .large {
   /* Create the width of the flex container*/
   width: 630px;
-  /* Create temporary borders to make life easier*/
-  border: 1px solid black;
   /* Set a gap between each of the columns */
   margin-right: 50px;
 }
@@ -103,8 +98,6 @@
 .medium {
   /* Create the width of the flex container*/
   width: 300px;
-  /* Create temporary borders to make life easier*/
-  border: 1px solid black;
   /* Set a gap between each of the columns */
   margin-right: 50px;
 }
@@ -112,45 +105,146 @@
 .small {
   /* Create the width of the flex container*/
   width: 240px;
-  /* Create temporary borders to make life easier*/
-  border: 1px solid black;
   /* Set a gap between each of the columns */
   margin-right: 50px;
 }
 
-.column .images {
-  /* Create temporary borders to make life easier*/
-  border: 1px solid black;
+.mainimg {
+  display:flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  height: 300px;
+  width: 629px;
+  align-items: center;
 }
 
-.column .spacing {
+p.images {
   /* Create temporary borders to make life easier*/
-  border: 1px solid black;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+
+}
+
+#main{
+  font-size: 40px;
+
+}
+
+p.spacing {
   /* Create spacing at the top and bottom of the paragraph */
   padding: 20px 0px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  display:inline-flex;
+  margin-bottom: 30px;
 }
 
-.column .smallerarticles{
-  /* Create temporary borders to make life easier*/
-  border: 1px solid black;
+.secondarticles{
+  width: 630px;
+  display:flex;
+  justify-content: space-between;
 }
 
-.column .smallerarticles h2{
-  /* Create spacing at the top and bottom of the heading and the paragraph in the smaller articles */
-  padding: 30px 0px;
+.flexible-container{
+  width: 300px;
 }
 
-.column .smallerarticles p{
-  /* Create spacing at the bottom of the paragraph in the smaller articles */
-  padding-bottom: 20px;
+.flexible-container h2{
+  width: 300px;
+  padding-top: 20px;
+  text-align:left;
 }
 
-.column .newsbites {
-  /* Create temporary borders to make life easier*/
-  border: 1px solid black;
+.smallerarticle-1 {
+  display:inline-flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
 }
 
-.column .newsbites h2{
-  /* Create spacing at the top and bottom of the heading and the paragraph in the New bites section */
-  padding: 30px 0px;
+.smallerarticle-2 {
+  display:flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  width: 299px;
+}
+
+.smallerarticle-3 {
+  display:flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+  width: 299px;
+}
+
+.image-text{
+  align-items: center;
+  height: 300px;
+}
+
+.newsbites h2{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.newsbitescolumns{
+  display: flex;
+  flex-direction: column;
+}
+
+.newsbitesitems{
+  margin: 0;
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-size: 12px;
+  color: DimGray;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 250px;
+  margin-top: 50px;
+}
+
+.columnfooter{
+  display : inline-flex;
+}
+
+.footerright li{
+/* This removes the bullet point from the list items */
+  list-style: none;
+/* This puts each list item next to each other on the same line (makes the span an inline block)*/
+  display : inline-flex;
+/* This creates an underline under each list item because these are not hrefs, they are spans */
+  text-decoration: underline;
+  /* This creates a 15px gap between each list item */
+  padding-right: 15px;
+}
+
+.mytimes {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: inline-flex;
+}
+
+.mytimeswords {
+  margin-right: 20px;
+}
+
+.mytimespipe {
+  margin-right: 40px;
+}
+
+.copyright{
+  display: inline-flex;
+  margin-top: 15px;
 }
