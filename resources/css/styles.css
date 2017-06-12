@@ -5,25 +5,23 @@
 }
 
 .container{
-  margin: 0 auto;
+  /* This provides a scrollbar when the browser is shrunk and the content no longer fits on the screen */
+  overflow: scroll;
 }
 
 /* This is the Header section */
 .header {
-  margin: 0;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-/* Creates a flex container */
+  /* Creates a flex container for the header*/
   display: flex;
-/* This puts space between the (logo and tagline) which is one flex container and the list items on the right which is another flex container
-  justify-content: space-between; */
   /* Creates a margin on top of the header */
   margin-top: 10px;
+  /* This creates a space between the header and the solid black line separating the header from the main content */
   padding-bottom: 10px;
   /* Creates a border below the header */
   border-bottom: 1px solid black;
-
 }
 
 .header img{
@@ -38,13 +36,11 @@
   display : inline-flex;
 /* This creates an underline under each list item because these are not hrefs, they are spans */
   text-decoration: underline;
-/* This creates a 15px gap between each list item */
-  padding-right: 15px;
-
+  /* This creates a 15px gap between each list item */
+    padding-right: 15px;
 }
 
 .headingleft {
-  margin: 0;
 /* This puts the tagline next to the logo (makes the paragraph an inline block) */
   display:inline-flex;
 /* This leaves a 30px gap before the logo*/
@@ -52,10 +48,12 @@
 /* These two lines centres the tagline so that it appears in the middle of the logo */
   justify-content: flex-start;
   align-items: center;
-/* Create temporary borders to make life easier*/
+/* Create temporary borders to make life easier */
   border: 1px solid black;
+/* This creates a space between the border and the first list item */
   margin-right: 10px;
-  min-width: 80%;
+/* This is done to set a specific width for the logo and tagline so that the menu items can appear at a specific place */
+  width: 52%;
 }
 
 .logo p{
@@ -64,71 +62,95 @@
 }
 
 .headingright {
-  margin: 0;
 /* These two lines centres the list items with the tagline (in the middle)*/
   display:inline-flex;
   align-items: center;
-/* This leaves a 30px gap after the list items */
-  padding-right: 30px;
-  min-width: 200px;
+/* This sets the specific width of the menu items so that when the browser shrinks, these items don't wrap */
+  min-width: 250px;
 }
 
 .spacer{
-  /* margin-top: 50px */
-  border: 1px solid cyan;
-  max-width: 95%;
-  margin: auto;
+/* Create temporary borders to make life easier */
+  border: 1px solid black;
+/* This stops the column widths from changing when the browser shrinks */
+  position: absolute;
+/* This creates a margin to the left of the first column */
+  margin-left: 20px;
 }
 
 .main{
-  margin: auto;
-  border: 1px solid MediumAquamarine;
+  /* This creates a gap between the border separating the header from the main content */
+  margin-top: 50px;
+  /* Creates a flex container for the main content */
   display: flex;
-  justify-content:space-between;
 }
 
 .column {
+  /* These two lines are not making any difference. Not sure why?????  */
   display:inline-flex;
-  justify-content: space-between;
   flex-direction: column;
-  /* Create temporary borders to make life easier*/
-  border: 1px solid yellow;
-  margin: 50px 50px 0px 0px;
-  padding-top: 20px;
 }
 
 .large {
   /* Create the width of the flex container*/
   width: 630px;
   /* Create temporary borders to make life easier*/
-  border: 1px solid purple;
+  border: 1px solid black;
+  /* Set a gap between each of the columns */
+  margin-right: 50px;
 }
 
 .medium {
   /* Create the width of the flex container*/
   width: 300px;
   /* Create temporary borders to make life easier*/
-  border: 1px solid brown;
-
+  border: 1px solid black;
+  /* Set a gap between each of the columns */
+  margin-right: 50px;
 }
 
 .small {
   /* Create the width of the flex container*/
   width: 240px;
   /* Create temporary borders to make life easier*/
-  border: 1px solid pink;
+  border: 1px solid black;
+  /* Set a gap between each of the columns */
+  margin-right: 50px;
 }
 
-.column p{
-  margin: auto;
-  border: 1px solid blue;
+.column .images {
+  /* Create temporary borders to make life easier*/
+  border: 1px solid black;
 }
 
-.column h2{
-  margin: auto;
-  border: 1px solid orange;
+.column .spacing {
+  /* Create temporary borders to make life easier*/
+  border: 1px solid black;
+  /* Create spacing at the top and bottom of the paragraph */
+  padding: 20px 0px;
 }
 
-.column img{
-  border: 1px solid red;
+.column .smallerarticles{
+  /* Create temporary borders to make life easier*/
+  border: 1px solid black;
+}
+
+.column .smallerarticles h2{
+  /* Create spacing at the top and bottom of the heading and the paragraph in the smaller articles */
+  padding: 30px 0px;
+}
+
+.column .smallerarticles p{
+  /* Create spacing at the bottom of the paragraph in the smaller articles */
+  padding-bottom: 20px;
+}
+
+.column .newsbites {
+  /* Create temporary borders to make life easier*/
+  border: 1px solid black;
+}
+
+.column .newsbites h2{
+  /* Create spacing at the top and bottom of the heading and the paragraph in the New bites section */
+  padding: 30px 0px;
 }
