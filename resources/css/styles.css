@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+.content{
+  position: relative;
+  top:50px;
+}
+
 .container{
   /* This provides a scrollbar when the browser is shrunk and the content no longer fits on the screen */
   overflow: scroll;
@@ -17,11 +22,15 @@
   /* Creates a flex container for the header*/
   display: flex;
   /* Creates a margin on top of the header */
-  margin-top: 10px;
+  padding-top: 10px;
   /* This creates a space between the header and the solid black line separating the header from the main content */
   padding-bottom: 10px;
   /* Creates a border below the header */
   border-bottom: 1px solid black;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
 }
 
 .header img{
